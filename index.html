@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="style.css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 </head>
-<body class="p-3 md:p-5 bg-[#22577A] box-border">
+<body class="pl-3 pr-3 md:pl-5 md:pr-5 bg-[#22577A] box-border">
+  <div class="h-screen p-1 flex flex-col justify-around">
    <div class="flex justify-center"> <div class="bg-[#38A3A5] w-full rounded-md flex flex-col items-center justify-center capitalize text-white p-2 md:flex-row sm:w-3/4">
         <p class="w-full h-fit md:text-lg md:font-bold lg:text-xl font-semibold flex justify-center sm:w-1/2">enter your name</p>
       <div class="flex space-x-1 justify-center w-full"><input id="name" class="w-3/5 border-2 bg-white border-gray-500 rounded-md text-center text-black  p-2 pr-0 h-7 hover:border-blue-600 hover:border-3 text-sm" type="search" name="" id="" placeholder="Enter PLease !"><button id="submit" class="w-1/3 border-[2px] rounded-md h-7 border-gray-600 text-xs bg-blue-200 text-gray-500 font-semibold sm:w-1/4">Submit</button></div>
     </div></div>
-    <div class="w-full flex justify-center mt-4 text-xl font-semibold capitalize text-white items-center "><p>the number game</p></div>
-    <div class="flex justify-center items-center"><div class="text-teal-50 rounded-md p-2 text-sm capitalize mt-4  border-2 border-white bg-red-400 font-semibold sm:text-center flex justify-center items-center w-full sm:w-1/2"><p class="">rule : you vs computer whoever randomly get higher number wins !</p></div></div>
-    <div class="flex w-full text-white capitalize mt-4 pb-2 text-lg font-semibold">
+    <div class="w-full flex justify-center  text-xl font-semibold capitalize text-white items-center "><p>the number game</p></div>
+    <div class="flex justify-center items-center"><div class="text-teal-50 rounded-md p-2 text-sm capitalize   border-2 border-white bg-red-400 font-semibold sm:text-center flex justify-center items-center w-full sm:w-1/2"><p class="">rule : you vs computer whoever randomly get higher number wins !</p></div></div>
+    <div class="flex w-full text-white capitalize  pb-2 text-lg font-semibold">
         <div id="ytext" class="w-1/2 flex justify-center ">you</div>
         <div class="w-1/2 flex justify-center ">computer</div>
     </div>
-    <div class="flex w-full text-yellow-200 capitalize mt-4 text-lg font-semibold">
+    <div class="flex w-full text-yellow-200 capitalize  text-lg font-semibold">
         <div id="you" class="text-[90px] w-1/2 flex justify-center transition-transform duration-500">⚀</div>
         <div id="comp" class="text-[90px] w-1/2 flex justify-center transition-transform duration-500">⚅</div>
     </div>
-    <div class="flex w-full justify-center text-white capitalize mt-10 text-lg font-semibold space-x-2">
+    <div class="flex w-full justify-center text-white capitalize  text-lg font-semibold space-x-2">
         <div id="youres" class=" w-1/2 flex justify-center border-[3px]  rounded-md bg-[#38a3a5] border-white sm:w-1/5">1</div>
         <div id="compres" class=" w-1/2 flex justify-center border-[3px] border-white bg-[#38a3a5] rounded-md sm:w-1/5">6</div>
     </div>
-    <div class="text-white flex mt-5 justify-center items-center"><button id="button" class="sm:w-1/2 uppercase text-base border-[4px] font-semibold bg-sky-600 h-12 hover:bg-blue-700 hover:text-lg w-full border-white rounded-lg">roll the dice </button></div>
-    <div class="w-full text-white uppercase mt-14 flex justify-center items-center font-bold text-xl">
+    <div class="text-white flex  justify-center items-center"><button id="button" class="sm:w-1/2 uppercase text-base border-[4px] font-semibold bg-sky-600 h-12 hover:bg-blue-700 hover:text-lg w-full border-white rounded-lg">roll the dice </button></div>
+    <div class="w-full text-white uppercase  flex justify-center items-center font-bold text-xl">
         <p id="win" class="flex justify-center items-center">result</p>
     </div>
-    <div class="w-full flex justify-center items-center mt-6">
+    <div class="w-full flex justify-center items-center ">
 <button id="reset" class="p-2 font-mono font-semibold bg-teal-600 text-white text-lg capitalize border-[2px] hover:scale-110 border-white rounded-md">wanna reset?</button>
     </div>
-
+  </div>
 
     <script>
      let button = document.querySelector('#button');
